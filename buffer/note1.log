@@ -1,0 +1,6 @@
+str1 = new Buffer([0xe6,0x88,0x91,0xe5,0x96])
+var StringDecoder = require("string_decoder").StringDecoder;
+var decoder = new StringDecoder();
+decoder.write(str1)
+str2 = new Buffer([0x9c,0xe7,0x88,0xb1])
+decoder.write(str2)

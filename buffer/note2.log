@@ -1,0 +1,17 @@
+str1 = new Buffer([0xe6,0x88,0x91,0xe5,0x96])
+var StringDecoder = require("string_decoder").StringDecoder;
+var decoder = new StringDecoder();
+decoder.write(str1)
+str2 = new Buffer([0x9c,0xe7,0x88,0xb1])
+decoder.write(str2)
+//Buffer对象与数值对象之间的相互转换
+buf = new Buffer([0x00,0x10,0x20,0x30])
+buf.readUInt8(0)
+buf.readUInt8(1)
+buf.readUInt8(2)
+buf.readUInt8(3)
+buf.readUInt8(4,true)
+buf
+buf.writeUInt8(128,0)
+buf
+buf.writeUInt8(255,4,true)

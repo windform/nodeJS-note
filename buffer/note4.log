@@ -1,0 +1,6 @@
+//复制缓存数据
+a = new Buffer("我喜爱编程")
+b = new Buffer(128)
+b.fill(0)
+a.copy(b,10)
+b

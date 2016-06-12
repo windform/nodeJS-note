@@ -1,0 +1,34 @@
+//Buffer类的类方法
+//isBuffer():用于判断一个对象是否是Buffer对象
+a = "aaa"
+b = Buffer(10)
+typeof(a)
+typeof(b)
+Buffer.isBuffer(a)
+Buffer.isBuffer(b)
+//byteLength:计算一个指定字符串的字节数
+a.lengh
+a = "我喜爱编程"
+a.lengh
+a.lengh
+a.length
+Buffer.byteLength(a,'utf8')
+Buffer.byteLength(a,'utf16len')
+//concat:用于将几个buffer对象结合创建为一个新的Buffer对象
+str1 = new Buffer('我')
+str2 = new Buffer('喜')
+str3 = new Buffer('爱')
+str4 = new Buffer('编')
+str5 = new Buffer('程')
+var buf=Buffer.concat([str1,str2,str3,str4,str5])
+buf
+buf.toString()
+var buf=Buffer.concat([str1,str2,str3,str4,str5],12)
+buf.toString()
+//isEncoding:用于检测一个字符串是否为一个有效的编码格式字符串
+str1="utf16le"
+str2="utf16e"
+str2="utf132le"
+Buffer.isEncoding(str1)
+Buffer.isEncoding(str2)
+Buffer.isEncoding(str3)

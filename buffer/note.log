@@ -1,0 +1,23 @@
+buf = new Buffer(128)
+buf.fill(1,10)
+buf = new Buffer([2,3,4])
+buf1 = new Buffer("你好")
+str = "我喜爱编程"
+buf = new Buffer(str)
+str.length
+buf.length
+str[2]
+buf[2]
+str[2]="欢"
+str
+buf[2]=0
+buf
+str.slice(2,4)
+buf.slice(2,4)
+buf.toString("utf8",9,12)
+buf.toString("utf8",12,buf.length)
+buf.toString()
+buf = new Buffer("我喜爱编程")
+buf.toString()
+buf.write("热",3,3)
+buf.toString()
