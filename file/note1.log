@@ -1,0 +1,4 @@
+//fs.readFile的使用方法
+//fs.readFileSync(filename,[options],callback)
+//常见的文件操作方式：
+//r r++ rs w wx w+ wx+ a ax a+ ax+

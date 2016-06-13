@@ -1,0 +1,8 @@
+//fs.writeFile(filename,data,[options],callback)
+//fs.appendFile(filename,data,[options],callback)
+
+//flag:文件采取何种方式操作，默认是w,文件不存在是创建，文件存在时重写
+//mode:读写权限。1-执行权限；2-写权限；3-读权限
+
+//fs.writeFileSync(filename,data,[options])
+//fs.appendFileSync(filename,data,[options])
