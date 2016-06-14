@@ -1,0 +1,2 @@
+//读取目录
+//fs.readdir(path,function(err,files){})
