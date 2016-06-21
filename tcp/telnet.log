@@ -1,0 +1,17 @@
+打开telnet服务：
+控制面板-程序和功能-打开或关闭windows功能-勾选telnet客户端
+
+Telnet 客户端命常用命令：
+　　open : 使用 openhostname 可以建立到主机的 Telnet 连接。
+　　close : 使用命令 close 命令可以关闭现有的 Telnet 连接。
+　　display : 使用 display 命令可以查看 Telnet 客户端的当前设置。
+　　send : 使用 send 命令可以向 Telnet 服务器发送命令。支持以下命令：
+　　ao : 放弃输出命令。
+　　ayt : “Are you there”命令。
+　　esc : 发送当前的转义字符。
+　　ip : 中断进程命令。
+　　synch : 执行 Telnet 同步操作。
+　　brk : 发送信号。
+　　上表所列命令以外的其他命令都将以字符串的形式发送至 Telnet 服务器。例如，sendabcd 将发送字符串 abcd 至 Telnet 服务器，这样，Telnet 会话窗口中将出现该字符串。
+　　quit
+　　使用 quit 命令可以退出 Telnet 客户端。

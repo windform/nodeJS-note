@@ -1,0 +1,26 @@
+//7.1 使用net模块实现基于TCP的数据通信
+//7.1.1 创建tcp服务器
+
+//语法：var server=net.createServer([options],[connectionListener])
+
+/*[connectionListener] :
+	function(socket){
+		回调函数
+	}
+*/
+
+/*也可以不指定回调函数，通过connection事件进行监听：
+server.on('connection',function(socket){
+	回调函数
+})
+*/
+
+/*建立TCP服务器之后，可以使用listen函数通知服务器开始监听客户端连接：
+1、server.listent(port,[host],[backlog],[callback]);
+2、server.listent(path,[callback]);
+3、server.listent(handle,[callback]);
+3、server.on('listening',function(){
+	回调函数
+});
+
+*/
