@@ -1,0 +1,13 @@
+//创建TCP客户端 : var net = net.socket([options])
+/*创建了socket端口对象之后，即可使用socket端口对象的两种方法来连接TCP服务器
+1、socket.connect(port,[host],[connectListener])
+   
+2、socket.connect(path,[connectListener])
+
+   socket.connect('connect',function(){
+	//回调函数代码
+   })
+*/
+/*socket端口对象也可被用来写入向客户端或服务器发送的流数据，当流数据被写入后将立即被发送到客户端或服务器端
+socket.write(data,[encoding],[callback])
+*/
