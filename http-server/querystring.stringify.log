@@ -1,0 +1,4 @@
+querystring.stringify({username:'whiteblue',age:24,job:'development'})
+querystring.stringify({username:'whiteblue',age:24,job:'development'},'!')
+querystring.stringify({username:'whiteblue',age:24,job:'development'},'!',':')
+querystring.stringify({username:'whiteblue',age:24,job:'development',like:['pingpong','basketball']})
