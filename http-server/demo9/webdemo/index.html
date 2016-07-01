@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>向HTTP服务器请求数据</title>
+	<script>
+	function GetData(){
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET','http://localhost:1337/',true);
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState == 4 && xhr.status == 200){
+				document.getElementById("div").innerHTML = xhr.responseText;
+			}
+		}
+		xhr.send(null);
+	}
+	</script>
+</head>
+<body>
+	<input type="button" value="获取数据" onclick="GetData()"/>
+	<dic id="div"></dic>	
+</body>
+</html>
