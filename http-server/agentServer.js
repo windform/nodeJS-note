@@ -9,10 +9,10 @@ var server = http.createServer(function(sreq,sres){
 		path:url_parts.pathname,
 		headers:sreq.headers
 	};
-	var creq = http.get(opts,functions(cres){
+	var creq = http.get(opts,function(cres){
 		sres.writeHead(cres.statusCode,cres.headers);
 		cres.pipe(sres);
 	});
 	sreq.pipe(creq);
 });
-server.listen(1337,'localhost');
+server.listen(1337,'l27.0.0.1');
