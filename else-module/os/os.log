@@ -1,0 +1,14 @@
+os.tmpdir()
+os.endianness()
+os.hostname()
+os.type()
+os.arch()
+os.release()
+os.uptime()
+os.loadavg()
+os.totalmem()
+os.freemem()
+os.cpus()
+os.networkInterfaces()
+os.EOL
+.SAVE os.log

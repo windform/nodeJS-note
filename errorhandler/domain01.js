@@ -16,6 +16,8 @@ catch(err){
 	console.log('接收客户端请求时发生以下错误：'+err.code);
 }*/
 
+//使用uncaughtException事件来捕获未被处理的错误
+
 var http = require('http');
 http.createServer(function(req,res){
 	if(req.url !== "/favicon.ico"){
