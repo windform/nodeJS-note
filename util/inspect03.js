@@ -1,4 +1,4 @@
-//inspect方法使用示例
+//自定义inspect方法的depth参数使用示例
 var util = require('util');
 function testFunction(msg1,msg2){
 	return msg1+msg2;
@@ -16,7 +16,8 @@ var child3= new Object();
 child3.name='child3';
 child2.child=child3;
 
-util.inspect.styles.special='cyan';
-util.inspect.styles.null='red';
-util.inspect.styles.string='blue';
-console.log(util.inspect(parent,{showHidden:true,depth:3,colors:true}));
+child2.inspect=function(depth){
+	return util.inspect(this,{depth:depth-2,customInspect:false})
+}
+
+console.log(util.inspect(parent,{customInspect:true,depth:4}));
