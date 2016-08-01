@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用命名空间</title>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		//var socket=io.connect();
+		var chat = io('http://localhost:1337/chat');
+		var news = io('http://localhost:1337/news');
+
+		chat.on('connect',function(){
+			chat.send('你好');
+			chat.on('message',function(msg){
+				console.log('从chat命名空间接收到消息:'+msg);
+			})
+		});
+		news.on('connect',function(){
+			news.emit('send message','hello');
+			news.on('send message',function(data){
+				console.log('从news命名空间接收到send message消息:'+data);
+			})
+		});
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

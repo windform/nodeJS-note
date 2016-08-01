@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>创建socket.IO客户端</title>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		//var socket=io.connect();
+		var socket = io('http://localhost:1337');
+		function setNickName(){
+			socket.emit('set nickname',
+				document.getElementById('nickname').value);
+		}
+		function getNickName(){
+			socket.emit('get nickname');
+		}
+
+
+		socket.on('send nickname',function(data){
+			console.log('我的昵称:'+data);
+		});
+		
+		socket.on('err',function(data){
+			console.log('服务器端出错，错误信息为:'+data);
+		});
+
+	</script>
+</head>
+<body>
+	<div>
+		昵称：<input type="text" id="nickname"/>
+		<input type="button" onclick="setNickName()" value="设置昵称"/>
+		<input type="button" onclick="getNickName()" value="获取昵称"/>
+	</div>
+	
+</body>
+</html>
