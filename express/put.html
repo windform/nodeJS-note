@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用put方法向服务器提交数据</title>
+	<script>
+		function submitData(){
+			var obj = {
+				firstname:document.getElementById('txtFirstName').value,
+				username:document.getElementById('txtUserName').value
+			};
+			var ob = JSON.stringify(obj);
+			
+			var xhr = new XMLHttpRequest();
+			xhr.open('put','/put.html',true);
+			xhr.onload = function(e){
+				if(this.status == 200) {
+					document.getElementById('result').innerHTML = this.response;
+				}
+			};
+			xhr.send(ob);
+		}
+	</script>
+</head>
+<body>
+	<form id="form1">
+		<label for="">姓：<input type="text" id="txtFirstName" name="firstname" value=""></label><br/><br/>
+		<label for="">名：<input type="text" id="txtUserName" name="username" value=""></label><br/><br/>
+		<input type="button" value="提交" onclick="submitData()"/>
+	</form>
+	<div id="result"></div>
+</body>
+</html>

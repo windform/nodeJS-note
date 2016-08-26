@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>创建socket.IO客户端</title>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		//var socket=io.connect();
+		var socket = io('http://localhost:1337');
+		socket.on('news',function(data){
+			console.log(data.hello);
+			socket.emit('my other event',{my:'data'})
+		});
+
+	</script>
+
+
+</head>
+<body>
+	
+</body>
+</html>

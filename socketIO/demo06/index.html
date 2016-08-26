@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>向所有客户端广播消息</title>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		//var socket=io.connect();
+		var socket = io('http://localhost:1337');
+		socket.on('login',function(names){
+			var str = '';
+			names.forEach(function(name){
+				str+="用户:"+name+"已登陆。<br/>"
+			});
+			document.getElementById('result').innerHTML=str;
+		});
+
+		function add(){
+			socket.emit('login',document.getElementById('nickname').value);
+		}
+
+	</script>
+</head>
+<body>
+	<div>
+		用户名：<input type="text" id="nickname"/>
+		<input type="button" onclick="add()" value="登录"/>
+		<output id="result"></output>
+	</div>
+	
+</body>
+</html>
