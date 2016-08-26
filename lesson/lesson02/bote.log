@@ -1,0 +1,5 @@
+publish = require('./moduleExample');
+publish.pyPrivate
+publish.myPublish
+publish.myPublish2
+require.paths
