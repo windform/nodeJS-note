@@ -1,0 +1,18 @@
+str="我喜爱编程"
+buf = new Buffer(str)
+str.length
+buf.length
+str[2]
+buf[2]
+str[2]="欢"
+str
+buf[2]=00
+buf
+str
+str.slice(2,4)
+buf.slice(2,4)
+subBuf = buf.slice(2,4)
+subBuf
+subBuf[0]=3
+subBuf
+buf

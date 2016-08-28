@@ -1,0 +1,7 @@
+require.resolve("./testModule02.js")
+require('./testModule02.js')
+console.log(require.cache)
+console.log(require.cache['exports'])
+console.log(require.cache[require.resolve('./testModule01.js')])
+console.log(require.cache[require.resolve('./testModule02.js')])
+console.log(require.cache[require.resolve('./testModule02.js')])

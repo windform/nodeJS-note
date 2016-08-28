@@ -1,0 +1,8 @@
+在Node.js中使用调试器
+
+1-在命令行中使用调试器；app01.js
+2-使用exports对象；app02.js
+3-将模块定义为类；app03.js
+4-为模块类定义类变量或类函数；app04.js
+5-使用目录管理模块；app05.js  nodejs根目录下的node_module的foo模块
+6-模块对象属性 app06.js

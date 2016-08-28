@@ -1,0 +1,13 @@
+事件处理机制及事件环机制
+
+PS:stydy.note 是在REPL环境运行下的输入代码
+PS：所有客户端的请求，配合浏览器使用
+
+1-使用on方法绑定事件处理函; app01.js
+2-对同一事件绑定多个事件处理函数; app02.js
+3-使用once方法让事件处理函数只执行一次; app03.js
+4-使用removeListener方法取消事件处理函数; app04.js
+5-使用removeAllListeners方法取消事件处理函数; app05.js
+6-使用emit方法手工出发某个对象的一个事件；app06.js
+7-使用listenerCount获取指定事件的事件处理函数的数量；app07.js
+8-EventEmitter类自身所拥有的事件；app08.js

@@ -1,0 +1,8 @@
+与模块相关的全局函数及对象
+
+PS:stydy.note 是在REPL环境运行下的输入代码
+
+1-自定义模块对象；app01.js
+2-多次引用相同模块测试； app02.js
+3-删除缓存区的某个模块后重新加载该模块；app03.js
+4-__firename变量和__dirname变量；app04.js
