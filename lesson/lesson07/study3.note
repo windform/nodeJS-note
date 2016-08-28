@@ -1,0 +1,15 @@
+buf = new Buffer("我喜爱编程")
+buf.length
+buf.toString("utf8",9,12)
+buf.toString("utf8",12,buf.length)
+buf.write("热",3,3)
+buf.toString()
+str1 = new Buffer([0xe6,0x88,0x91,0xe5,0x96])
+str2 = new Buffer([0x9c,0xe7,0x88,0xb1])
+str1.toString()
+str2.toString()
+Buffer.concat([str1,str2]).toString()
+var StringDecoder = require("string_decoder").StringDecoder;
+var decoder = new StringDecoder()
+decoder.write(str1)
+decoder.write(str2)

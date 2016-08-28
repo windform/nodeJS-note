@@ -1,0 +1,9 @@
+buf = new Buffer([0x00,0x10,0x20,0x30])
+buf.readUInt8(0)
+buf.readUInt8(1)
+buf.readUInt8(2)
+buf.readUInt8(3)
+buf.readUInt8(4,true)
+buf.writeUInt8(128,0)
+buf
+buf.writeUInt8(255,4,true)
