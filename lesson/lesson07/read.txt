@@ -6,3 +6,4 @@ PS：study.note为REPL环境下运行的代码
 2-字符串的长度与缓存区的长度-study2.note
 3-Buffer对象与字符串对象之间的相互转换-study3.note
 4-Buffer对象与数值对象之间的相互转换-study4.note
+5-Buffer对象与JSON对象之间的相互转换-study5.note
