@@ -7,3 +7,9 @@
 5-追加数据到文件中去；-app05.js
 6-使用writeFile方法复制文件；-app06.js
 7-从指定位置开始读写文件； -app07.js
+8-write方法使用案例； -app08.js
+9-mkdir创建目录； -app09.js
+10-readdir创建目录； -app10.js
+11-查看文件或目录的信息； -app11.js
+12-查看文件或目录是否存在； -app12.js
+13-获取文件或目录的绝对路径； -app13.js
