@@ -4,7 +4,8 @@ var fs = require('fs');
 server.on('connection',function(socket){
 	console.log('客户端与服务器端连接已建立');
 	socket.setEncoding('utf8');
-	var readStream = fs.createReadStream('./server01.js');
+	var readStream = fs.createReadStream('./book.pdf');
+	//var readStream = fs.createReadStream('./dyna.mp3');
 	readStream.on('data',function(data){
 		var flag = socket.write(data);
 		console.log('write方法的返回值为：'+flag);
@@ -17,4 +18,4 @@ server.on('connection',function(socket){
 		console.log('TCP缓存区中数据已全部发送。');
 	});
 });
-server.listen(8431,'localhost');
+server.listen(8430,'localhost');

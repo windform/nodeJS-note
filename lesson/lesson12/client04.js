@@ -1,10 +1,13 @@
+//获取当前已发送的字节数
 var net = require('net');
 var client = new net.Socket();
 client.setEncoding('utf8');
-client.connect(8431,'localhost',function(){
+client.connect(8430,'localhost',function(){
 	console.log('已连接到服务器');
-	client.write('你好');
-	client.end('再见！')
+	client.write('你好。');
+	console.log('当前已发送%d字节。',client.bytesWritten);
+	client.end('再见。')
+	console.log('当前已发送%d字节。',client.bytesWritten);
 });
 client.on('data',function(data){
 	console.log('已接收服务器端发送的数据：'+data)

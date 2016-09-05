@@ -4,4 +4,5 @@
 2-server方法：unref()和ref();-同上
 3-使用TCP服务器对象的close方法拒绝新的客户端连接请求；-client02.js、server02.js
 4-指定TCP客户端与TCP服务器建立连接10秒后关闭客户端连接；-client03.js、server03.js
-5-使用socket端口对象的write方法发送小尺寸文件；client04.js、server04.js
+5-使用socket端口对象的write方法发送小尺寸文件；client04.js、server04.js(网络环境下)
+6-net模块中的类方法；-net.js
