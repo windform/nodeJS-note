@@ -1,0 +1,13 @@
+使用net模块实现基于TCP的数据通信
+
+1-创建TCP服务器; app01.js
+2-指定服务器地址及端口被占用时需要执行的处理;  app02.js
+3-使用addresss方法查看TCP服务器监听的地址信息;  app03.js
+4-使用getConnections方法查询当前存在的客户端连接数并设置最大连接数；app04.js
+5-使用close方法拒绝新的客户端连接请求；app05.js
+6-socket端口对象：使用data方法读取客户端发送的数据流；app07.js
+7-socket端口对象：end事件的回调函数的使用示例；app06.js
+8-socket端口对象：使用pipe方法将所有客户端发送数据写入文件/unpipe()；app08.js
+9-socket端口对象：pause方法与resume方法的使用示例；app09.js
+10-socket端口对象：使用setTimeout方法指定客户端连接的超时时间；app10.js
+11-socket端口对象：取消对客户端连接的超时时间的指定；

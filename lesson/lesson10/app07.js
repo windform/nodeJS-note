@@ -1,0 +1,14 @@
+path=require('path')
+//获取一个路径的文件名
+console.log(path.basename('/foo/bar/baz/asdf/quux.html'))
+console.log(path.basename('/foo/bar/baz/asdf/quux.html','.html'))
+console.log(path.basename('/foo/bar/baz/asdf/quux.html','html'))
+console.log(path.basename('/foo/bar/baz/asdf/quux.html','.ext'))
+//获取一个路径的扩展名
+console.log(path.extname('/foo/index.html'))
+console.log(path.extname('/foo/index.'))
+console.log(path.extname('/foo/index'))
+//属性值操作系统指定的文件分隔符
+console.log(path.sep)
+//属性值为操作系统指定的路径分隔符
+console.log(path.delimiter)

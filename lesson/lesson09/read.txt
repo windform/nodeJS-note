@@ -1,0 +1,12 @@
+使用文件流
+
+1-使用createReadStream方法读取文件-app01.js
+2-暂停并恢复文件的读取-app02.js
+3-使用createWriteStream方法写入文件-app03.js
+4-使用WriteStream对象的write方法中的callback参数指定回调函数-app04.js
+5-观察WriteStream对象的write方法的返回结果并监听drain事件-app05.js
+6-观察drain事件的触发时机-app06.js
+7-error事件回调函数的使用示例-app07.js
+8-使用pipe方法复制文件-app08.js
+9-将end属性值设置为false以在目标文件中追加数据-app09.js
+10-使用unpipe方法取消目标文件的写入操作-app10.js

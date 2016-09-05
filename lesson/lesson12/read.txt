@@ -1,0 +1,7 @@
+使用net模块实现基于TCP的数据通信
+
+1-创建TCP客户端; -client01.js、server01.js
+2-server方法：unref()和ref();-同上
+3-使用TCP服务器对象的close方法拒绝新的客户端连接请求；-client02.js、server02.js
+4-指定TCP客户端与TCP服务器建立连接10秒后关闭客户端连接；-client03.js、server03.js
+5-使用socket端口对象的write方法发送小尺寸文件；client04.js、server04.js

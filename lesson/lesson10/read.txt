@@ -1,0 +1,9 @@
+对路径进行操作
+
+1-使用normalize方法解析路径；-app01.js
+2-使用join方法将参数值字符串结合为一个路径字符串；-app02.js
+3-使用resolve方法获取绝对路径；-app03.js
+4-在resolve方法的最后一个参数中指定文件名；-app04.js
+5-使用relative获取两个路径的相对关系；-app05.js
+6-使用dirname方法获取一个路径中的目录名；-app06.js
+7-其他方法；app07.js
