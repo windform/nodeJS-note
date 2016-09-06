@@ -1,0 +1,5 @@
+HTTP服务器
+
+1-创建http服务器； server01.js
+2-使用close方法关闭服务器；server02.js
+3-指定服务器地址及端口已被占用时需要执行的处理；server03.js
