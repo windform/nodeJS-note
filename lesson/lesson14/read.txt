@@ -3,3 +3,10 @@ HTTP服务器
 1-创建http服务器； server01.js
 2-使用close方法关闭服务器；server02.js
 3-指定服务器地址及端口已被占用时需要执行的处理；server03.js
+4-指定客户端与服务器建立连接时的处理；-server04.js
+5-使用setTimeout方法设置服务器超时时间；-server05.js
+6-在文件中保存客户端的请求信息；-server06.js
+7-用于测试data事件与end事件回调函数的HTML页面代码；server07.js、demo07.html
+8-转换URL字符串与查询字符串；repl.log
+9-使用parse方法解析url地址字符串；server08.js
+10-使用http ServerResponse对象的writeHead方法设置响应头信息；server09.js、demo09.html
