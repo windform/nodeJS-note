@@ -9,4 +9,16 @@ HTTP服务器
 7-用于测试data事件与end事件回调函数的HTML页面代码；server07.js、demo07.html
 8-转换URL字符串与查询字符串；repl.log
 9-使用parse方法解析url地址字符串；server08.js
+
 10-使用http ServerResponse对象的writeHead方法设置响应头信息；server09.js、demo09.html
+11-使用setHeader方法单独设置响应头信息；server10.js
+12-使用headersSent属性查看使用writeHead方法示响应头的发送时机；server11.js
+13-使用headersSent属性查看使用setHeader方法示响应头的发送时机；server12.js
+14-sendDate属性与statusCode属性的使用示例；server13.js
+15-使用addTrailers在响应数据的尾部追加一个头信息； server14.js
+16-write方法的返回值；server15.js
+17-setTimeout方法的使用示例；server16.js
+18-使用request方法向其他网站请求数据； server17.js
+19-使用setTimeout方法设置端口超时时间； server18.js
+20-向本地服务器请求数据；server19.js、client19.js
+21-制作代理服务器；server20.js
