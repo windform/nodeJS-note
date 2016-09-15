@@ -1,0 +1,9 @@
+进程与子进程
+
+1、进程对象的基本属性；-process.log
+2、process.stdin对象和process.stdout对象的使用示例；-process01.js
+3、遍历process.argv属性值数组；process02.js
+4、使用setTimeout方法并将时间参数值设定为0；process03.js
+5、nextTick方法的使用示例；process04.js
+6、使用nextTick方法指定一个函数在一个同步方法执行完毕时被调用；process05.js
+7、使用nextTick方法指定两个耗时同步进行；process06.js

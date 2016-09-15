@@ -1,0 +1,13 @@
+process
+process.env
+process.env.OS
+process.execPath
+process.version
+process.versions
+process.platform
+process.argv
+process.config
+process.pid
+process.title
+process.arch
+process.memoryUsage
